@@ -22,12 +22,21 @@ src: url(./imgs/Hey\ August.ttf);
 
 .menu{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     overflow: hidden;
-    background-image: url(./imgs/fundo.jpg);
+    background-color: rgba(109, 141, 118, 0.5);
     height: 10vh;
+    width: 100%;
     display: flex;
+    justify-content: end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+    
+    
 }
 
 .limenu{
@@ -38,9 +47,45 @@ src: url(./imgs/Hey\ August.ttf);
     display: block;
     text-align: center;
     padding: 16px 16px;
-    justify-self: start;
+    /* justify-self: start; */
+    font-size: 20px;
 }
 
+.img{
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+
+.amenu1{
+    display: block;
+    text-align: center;
+    padding: 16px 16px;
+    justify-self: start;
+    font-size: 20px;
+    background-color: #a7b381;
+    border-radius: 5px;
+    margin-right: 45px;
+    margin-left: 10px;
+   
+  
+
+}
+
+
+.amenu:hover{
+    border-bottom: 3px solid rgb(116, 39, 39);
+    background-color: rgba(0, 0, 255, 0.3);
+
+}
+
+.limenu1:hover{
+transform: translateY(-0.5px) scale(1.02);
+ transition: ease-in 0.2s;
+ transition: ease-out 0.2s;
+ transition: ease-in-out 0,2s;
+} 
 
 .container{
     
@@ -48,14 +93,21 @@ src: url(./imgs/Hey\ August.ttf);
     height: 85vh;
     display: flex;
     align-items: center;
+    
+    
+    justify-content: center;
+    
+
+}
+
+.imagemfundo{
     background-image: url(./imgs/borral7.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
     background-position-y: -250px;
     background-size: 100vw;
-    justify-content: center;
-    
+    overflow: visible;
 
 }
 
